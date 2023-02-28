@@ -78,31 +78,33 @@ h6 {
 /* media  quearys */
 
 @media(max-width:470px){
+
   .header-head{
     font-size: 1.6rem;
   }
   .small-sizer{
     font-size: 1rem;
   }
+.btn-again{
+  position: relative;
+  top:3rem;
+}
+
   .secreat-number{
     position: relative;
     top: 6rem;
-  }
-
-  header{
-    height: 10rem;
-
-  }
-  .secreat-number{
-    position: relative;
-    top: 0rem;
     font-size:3rem;
     height:5rem ;
     width: 7rem;
-}
+  }
+
+  header{
+    height: 15rem;
+
+  }
 
 #game-box{
-  padding: 0;
+  padding: 5%;
 }
 
 }
