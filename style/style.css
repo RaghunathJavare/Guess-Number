@@ -8,15 +8,15 @@ body {
   background-color: #222; 
   color: #fff;
   font-family:'Montserrat';
+  text-align: center;
 }
 
 /* section header  */
 #header{
   padding: 5% 0;
-  text-align: center;
 }
 header {
-  height: 21rem;
+  height: 15rem;
     border-bottom: 7px solid #eee;
   }
 
@@ -25,11 +25,8 @@ header {
 }
 
 .header-text{
+  display: inline;
   font-size: 1.5rem;
-  position: relative;
-  margin: 2rem 0 3rem;
-  right: 2rem;
-  text-align: right;
 }
 
 .secreat-number{
@@ -46,8 +43,7 @@ header {
 
 /* section game-box  */
 #game-box{
-  padding: 10% 15%;
-  text-align: center;
+  padding: 5% 15%;
 
 }
 
@@ -66,7 +62,6 @@ header {
   padding: 2rem;
   width: 13rem;
   height: 6rem;
-  margin-top: 3rem;  
   text-align: center;
 }
 
@@ -75,8 +70,7 @@ header {
 
 h6 {
   font-size: 1.5rem;
-  margin: 5% 0;
-  padding: 5% 0;
+  padding: 3% ;
   
 }
 
@@ -89,14 +83,26 @@ h6 {
   }
   .small-sizer{
     font-size: 1rem;
-    text-align: center;
   }
   .secreat-number{
     position: relative;
     top: 6rem;
   }
-  .btn-again{
-    width: 10rem;
+
+  header{
+    height: 10rem;
+
   }
+  .secreat-number{
+    position: relative;
+    top: 0rem;
+    font-size:3rem;
+    height:5rem ;
+    width: 7rem;
+}
+
+#game-box{
+  padding: 0;
+}
 
 }
