@@ -43,7 +43,7 @@ btnCheak.addEventListener("click", function () {
 
     if (!inputNumber) {
       massege.textContent = "🩻 NO Number 🩻";
-      soundEffect("/sounds/wrong-guess.mp3");
+      soundEffect("sounds/wrong-guess.mp3");
 
       // if inputNumber is different from diceNumber
     } else if (inputNumber !== diceNumber) {
