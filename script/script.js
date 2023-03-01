@@ -49,15 +49,17 @@ btnCheak.addEventListener("click", function () {
     } else if (inputNumber !== diceNumber) {
       soundEffect("sounds/wrong-guess.mp3");
       if (gameScore > 1) {
+        document.querySelector('.number').value='';
         massege.textContent =
           inputNumber > diceNumber ? "📈Too High" : "📉Too Low";
 
         gameScore--;
         score.textContent = gameScore;
       } else {
-        soundEffect('sounds/wow-121578.mp3')
+        soundEffect("sounds/wow-121578.mp3");
         massege.textContent = "🩻You lost the game🩻";
         score.textContent = 0;
+        playerWin = false;
       }
 
       // player win the game
@@ -78,7 +80,7 @@ btnCheak.addEventListener("click", function () {
 });
 
 const playAgain = function () {
-  soundEffect('sounds/play-again.mp3')
+  soundEffect("sounds/play-again.mp3");
   diceNumber = Math.trunc(Math.random() * 29) + 1;
   massege.textContent = "start guessing...";
   gameScore = 10;
