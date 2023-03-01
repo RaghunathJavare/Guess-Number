@@ -1,63 +1,83 @@
-
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
-  background-color: #222; 
+  background-color: #222;
   color: #fff;
-  font-family:'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
 }
 
+/* special class  */
+
+.small-sizer {
+  color: #1f9e14;
+}
+
 /* section header  */
-#header{
+
+#header {
   padding: 5% 0;
 }
+
 header {
   height: 15rem;
-    border-bottom: 7px solid #eee;
-  }
-
-.header-head{
-    font-size: 3rem;
+  border-bottom: 7px solid lawngreen;
 }
 
-.header-text{
+.header-head {
+  font-size: 3rem;
+  color: lawngreen;
+}
+
+.header-text {
   display: inline;
   font-size: 1.5rem;
+  color: #16ff00;
 }
 
-.secreat-number{
-    border-width: 2rem solid white;
-    background-color: white;
-    color: black;
-    font-size:4rem;
-    height:6rem ;
-    margin:3% auto;
-    width: 10rem;
+.massage {
+  font-size: 2rem;
+  color: #b43131;
 }
 
+/* secreat box  */
 
+.secreat-number {
+  background-color: white;
+  border: 2px solid lawngreen;
+  color: #222;
+  font-size: 4rem;
+  height: 6rem;
+  margin: 3% auto;
+  width: 10rem;
+}
 
 /* section game-box  */
-#game-box{
+#game-box {
   padding: 5% 15%;
-
 }
 
+/* game btn's  */
 
-.btn-cheak{
+.btn {
+  background-color: #99d894;
+}
+
+.btn-cheak {
   font-size: 1.5rem;
   margin: 3%;
 }
 
-.number{
-  background: none;
-  border: 4px solid #eee;
+/* input box  */
+
+.number {
+  background-color: #fff;
+  color: #222;
+  border: 4px solid #16ff00;
   font-family: inherit;
-  color: inherit;
   font-size: 3rem;
   padding: 2rem;
   width: 13rem;
@@ -65,46 +85,58 @@ header {
   text-align: center;
 }
 
-
 /* messeges  */
 
 h6 {
   font-size: 1.5rem;
-  padding: 3% ;
-  
+  padding: 3%;
+}
+
+/* javascript class  */
+
+/* color background black  */
+
+/* secreat box */
+
+.bg-dark {
+  background-color: black;
+  color: white;
 }
 
 
 /* media  quearys */
 
-@media(max-width:470px){
-
-  .header-head{
+@media (max-width: 470px) {
+  .header-head {
     font-size: 1.6rem;
   }
-  .small-sizer{
+  .small-sizer {
     font-size: 1rem;
   }
-.btn-again{
-  position: relative;
-  top:3rem;
-}
+  .btn-again {
+    position: relative;
+    top: 3rem;
+  }
+  .btn-cheak {
+    margin-top: 2rem;
+  }
+  .massage {
+    font-size: 1.3rem;
+  }
 
-  .secreat-number{
+  .secreat-number {
     position: relative;
     top: 6rem;
-    font-size:3rem;
-    height:5rem ;
+    font-size: 3rem;
+    height: 5rem;
     width: 7rem;
   }
 
-  header{
+  header {
     height: 15rem;
-
   }
 
-#game-box{
-  padding: 5%;
-}
-
+  #game-box {
+    padding: 5%;
+  }
 }
