@@ -58,6 +58,7 @@ btnCheak.addEventListener("click", function () {
       } else {
         soundEffect("sounds/wow-121578.mp3");
         massege.textContent = "🩻You lost the game🩻";
+        SecreatNumber.textContent=diceNumber;
         score.textContent = 0;
         playerWin = false;
       }
@@ -82,7 +83,7 @@ btnCheak.addEventListener("click", function () {
 const playAgain = function () {
   soundEffect("sounds/play-again.mp3");
   diceNumber = Math.trunc(Math.random() * 29) + 1;
-  massege.textContent = "start guessing...";
+  massege.textContent = "Start guessing...";
   gameScore = 10;
   score.textContent = gameScore;
   SecreatNumber.classList.remove("bg-dark");
