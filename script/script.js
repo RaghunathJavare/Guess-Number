@@ -12,6 +12,14 @@ const score = document.querySelector(".score ");
 
 const highScore = document.querySelector(".highscore");
 
+const ovelay = document.querySelector(".overlay");
+const ovelayHidden = document.querySelector(".btn-overlay");
+// ovelay hidden
+
+ovelayHidden.addEventListener("click", function () {
+  ovelay.classList.add("hidden");
+});
+
 // start to building game
 
 // sound-effects
@@ -49,7 +57,7 @@ btnCheak.addEventListener("click", function () {
     } else if (inputNumber !== diceNumber) {
       soundEffect("sounds/no-number.mp3");
       if (gameScore > 1) {
-        document.querySelector('.number').value='';
+        document.querySelector(".number").value = "";
         massege.textContent =
           inputNumber > diceNumber ? "📈Too High" : "📉Too Low";
 
@@ -58,7 +66,7 @@ btnCheak.addEventListener("click", function () {
       } else {
         soundEffect("sounds/wow-121578.mp3");
         massege.textContent = "🩻You lost the game🩻";
-        SecreatNumber.textContent=diceNumber;
+        SecreatNumber.textContent = diceNumber;
         score.textContent = 0;
         playerWin = false;
       }
