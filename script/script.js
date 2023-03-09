@@ -14,11 +14,6 @@ const highScore = document.querySelector(".highscore");
 
 const ovelay = document.querySelector(".overlay");
 const ovelayHidden = document.querySelector(".btn-overlay");
-// ovelay hidden
-
-ovelayHidden.addEventListener("click", function () {
-  ovelay.classList.add("hidden");
-});
 
 // start to building game
 
@@ -27,6 +22,12 @@ ovelayHidden.addEventListener("click", function () {
 const soundEffect = function (path) {
   new Audio(path).play();
 };
+// ovelay hidden
+
+ovelayHidden.addEventListener("click", function () {
+  soundEffect("sounds/start.mp3");
+  ovelay.classList.add("hidden");
+});
 
 // dice numbers
 let diceNumber = Math.trunc(Math.random() * 29) + 1;
