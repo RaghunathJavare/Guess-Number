@@ -113,8 +113,6 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height:auto;
   /* background-color: black; */
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
@@ -132,10 +130,12 @@ h6 {
   font-size: 2rem;
   text-align: left;
   margin: 3%;
-  text-transform: capitalize;
+  word-spacing: 4px;
+  text-transform: lowercase;
 }
 .btn-overlay{
   width: 7rem;
+  margin:1% 0 5%;
   background:none;
 }
 
@@ -192,7 +192,6 @@ h6 {
   }
 .overlay-text{
   font-size: 1.2rem;
-  text-align: left;
   margin:1.4rem;
   position: relative;
   right: 3rem;
